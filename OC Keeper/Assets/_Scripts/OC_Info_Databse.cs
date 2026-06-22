@@ -8,6 +8,7 @@ public class OC_Info_Databse : MonoBehaviour
     public Transform contentParent;
     public GameObject OCButtonPrefab;
     public List<OC> AllOCs = new List<OC>();
+    public OC_Detail_UI detailsUI;
 
     public void OpenOCSDatabase()
     {
@@ -27,8 +28,8 @@ public class OC_Info_Databse : MonoBehaviour
 
             button.onClick.AddListener(() =>
             {
-                // open oc ui
-                Debug.Log("Apple");
+                detailsUI.gameObject.SetActive(true);
+                detailsUI.SetOCDetails(oc);
             });
 
         }

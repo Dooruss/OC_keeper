@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37f427ef3c531674cb9b2467e547d389, type: 3}
+  m_Name: emma Frost
+  m_EditorClassIdentifier: Assembly-CSharp::OC
+  Name: Emma frost
+  Pronouns: She/her
+  Age: 9000
+  Birthday: Whenever wherever
+  Height: 0
+  Sexuality: 5
+  Occupation: 
+  Ethnicity: 0
+  Species: 0
+  Residance_Country: 0
+  hobbys: 
+  Religious: 0
+  Signature_Weapon: 
+  Weaknesses: 
+  Fear_Phobia: 
+  Fav_Food: 
+  Fav_Color: 
+  Able_To_Cook: 0
+  Able_To_Bake: 0
+  Able_To_Drive: 0
+  Able_To_Instruments: 
+  Backstory: 
+  Body: 
+  Eyes: 
+  Hair: 
+  Clothing: 
+  Fantasy_Features: 
+  Defining_Features: 
+  Voice: 

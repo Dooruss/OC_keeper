@@ -10,10 +10,11 @@ public class OC : ScriptableObject
     public int Age;
     public string Birthday;
     public float Height;
-    public enum Sexuality
+    public enum Chosen_Sexuality
     {
-        straight , gay ,lesbian , bisexual , pansexual
+        straight , gay ,lesbian , bisexual , pansexual , Attracted_To_Nai
     }
+    public Chosen_Sexuality Sexuality;
 
     // Relationships
     // later im lazy asf
@@ -21,18 +22,21 @@ public class OC : ScriptableObject
     // Importaznt info
     [Header("Important Info")]
     public string Occupation;
-    public enum Ethnicity
+    public enum Chosen_Ethnicity
     {
         America , german
     }
-    public enum Species
+    public enum Chosen_Species
     {
         Human , Fairy , Zombie , Skeleton , Demon , Angel , God , Werewolf , Vampire , Ghost , Witch , Mermaid , Siren
     }
-    public enum Residance_Country
+    public enum Chosen_Residance_Country
     {
         Opaline , Carolti , Berinvino , Zexom
     }
+    public Chosen_Ethnicity Ethnicity;
+    public Chosen_Species Species;
+    public Chosen_Residance_Country Residance_Country;
 
     // General info
     [Header("General info")]
