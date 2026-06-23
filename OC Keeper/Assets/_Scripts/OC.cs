@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.UI;
 
 [CreateAssetMenu(fileName = "OC", menuName = "Scriptable Objects/OC")]
 public class OC : ScriptableObject
@@ -15,7 +16,7 @@ public class OC : ScriptableObject
         straight , gay ,lesbian , bisexual , pansexual , Attracted_To_Nai
     }
     public Chosen_Sexuality Sexuality;
-
+    public Sprite Main_Picture;
     // Relationships
     // later im lazy asf
 

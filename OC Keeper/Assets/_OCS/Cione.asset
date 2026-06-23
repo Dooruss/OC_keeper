@@ -17,7 +17,12 @@ MonoBehaviour:
   Age: 18
   Birthday: idk
   Height: 111
+  Sexuality: 0
+  Main_Picture: {fileID: 21300000, guid: 70472f75df453b04b8de58b2b8b8c3e0, type: 3}
   Occupation: Proffesional Ice Skater
+  Ethnicity: 0
+  Species: 0
+  Residance_Country: 0
   hobbys: Crochet , Making outfits , Sewing
   Religious: 0
   Signature_Weapon: Ice SKates

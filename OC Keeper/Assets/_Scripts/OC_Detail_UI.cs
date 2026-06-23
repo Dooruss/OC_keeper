@@ -10,6 +10,7 @@ public class OC_Detail_UI : MonoBehaviour
     public TMP_Text Text_OC_Birthday;
     public TMP_Text Text_OC_Height;
     public TMP_Text Text_OC_Sexuality;
+    public Image Main_Picture;
     // ------------------------------
     [Header("Important Info")]
     public TMP_Text Text_Ethnicity;
@@ -52,21 +53,58 @@ public class OC_Detail_UI : MonoBehaviour
         Text_OC_Birthday.text = "Birthday: " + oc.Birthday.ToString();
         Text_OC_Height.text = "Height: " + oc.Height.ToString() + "cm";
         Text_OC_Sexuality.text = "Sexuality: " + oc.Sexuality.ToString();
+        if (oc.Main_Picture != null)
+        {
+            Main_Picture.sprite = oc.Main_Picture;
+        } else
+        {
+            Main_Picture.sprite = null;
+        }
+        //Ethnicity, Species, Country of Residence
         Text_Ethnicity.text = "Ethnicity: " + oc.Ethnicity;
         Text_Species.text = "Species: " + oc.Species;
         Text_CountryResidance.text = "Country of Residence: " + oc.Residance_Country;
+        // General info
+        SetGenInfo(oc);
+        SetPrefrences(oc);
+        //Skills
+        SetSkills(oc);
+        //Appearance
+        SetAppearance(oc);
+        //Backstory
+        Text_Backstory.text = oc.Backstory;
+    }
+
+    //Set Info
+    #region 
+
+    private void SetGenInfo(OC oc)
+    {
         Text_Occupation.text = "Occupation: " + oc.Occupation;
         Text_hobbys.text = "Hobbies: " + oc.hobbys;
         Text_Religious.text = "Religious: " + (oc.Religious ? "Yes" : "No");
         Text_Signature_Weapon.text = "Signature Weapon: " + oc.Signature_Weapon;
         Text_Weaknesses.text = "Weaknesses: " + oc.Weaknesses;
         Text_Fear_Phobia.text = "Fear/Phobia: " + oc.Fear_Phobia;
-        //Skills
+
+    }
+
+    private void SetPrefrences(OC oc)
+    {
+        Text_Fav_Food.text = "Favorite Food: " + oc.Fav_Food;
+        Text_Fav_Color.text = "Favorite Color: " + oc.Fav_Color;
+    }
+
+    private void SetSkills(OC oc)
+    {
         Text_Able_To_Bake.text = "Able to Bake: " + (oc.Able_To_Bake ? "Yes" : "No");
         Text_Able_To_Cook.text = "Able to Cook: " + (oc.Able_To_Cook ? "Yes" : "No");
         Text_Able_To_Drive.text = "Able to Drive: " + (oc.Able_To_Drive ? "Yes" : "No");
         Text_Able_To_Instruments.text = "Able to Play Instruments: " + oc.Able_To_Instruments;
-        //Appearance
+    }
+
+    private void SetAppearance(OC oc)
+    {
         Text_Body.text = "Body: " + oc.Body;
         Text_Eyes.text = "Eyes: " + oc.Eyes;
         Text_Hair.text = "Hair: " + oc.Hair;
@@ -74,7 +112,7 @@ public class OC_Detail_UI : MonoBehaviour
         Text_Fantasy_Features.text = "Fantasy Features: " + oc.Fantasy_Features;
         Text_Defining_Features.text = "Defining Features: " + oc.Defining_Features;
         Text_Voice.text = "Voice: " + oc.Voice;
-        //Backstory
-        Text_Backstory.text = oc.Backstory;
     }
+
+    #endregion
 }
