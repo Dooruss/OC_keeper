@@ -23,6 +23,12 @@ MonoBehaviour:
   Ethnicity: 0
   Species: 0
   Residance_Country: 0
+  Relationships:
+  - Type: 0
+    Character: {fileID: 11400000, guid: a93b723bba37eb14c917f8c0e3d5632f, type: 2}
+    Description: 'Emma Frost is  great friend of Cione , Shes incredible!
+
+'
   hobbys: Crochet , Making outfits , Sewing
   Religious: 0
   Signature_Weapon: Ice SKates
@@ -34,8 +40,10 @@ MonoBehaviour:
   Able_To_Bake: 0
   Able_To_Drive: 1
   Able_To_Instruments: Flute
-  Backstory: Cione is an amazing ice skater. Her and Juno (her brother) are world
-    wide known for their skills.
+  Backstory: 'Cione is an incredible ice skater.
+
+    Her and her brother Juno are
+    world-wide known for their incredible skills!'
   Body: 
   Eyes: 
   Hair: 

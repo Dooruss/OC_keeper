@@ -17,6 +17,11 @@ public class OC_Detail_UI : MonoBehaviour
     public TMP_Text Text_Species;
     public TMP_Text Text_CountryResidance;
     // ------------------------------
+    [Header("Relationship")]
+    public Transform Parent_Relationship;
+    public GameObject Button_Relationship_Prefab;
+    public OC_Info_Databse Database;
+    // ------------------------------
     [Header("General info")]
     public TMP_Text Text_Occupation;
     public TMP_Text Text_hobbys;
@@ -56,7 +61,8 @@ public class OC_Detail_UI : MonoBehaviour
         if (oc.Main_Picture != null)
         {
             Main_Picture.sprite = oc.Main_Picture;
-        } else
+        }
+        else
         {
             Main_Picture.sprite = null;
         }
@@ -64,6 +70,8 @@ public class OC_Detail_UI : MonoBehaviour
         Text_Ethnicity.text = "Ethnicity: " + oc.Ethnicity;
         Text_Species.text = "Species: " + oc.Species;
         Text_CountryResidance.text = "Country of Residence: " + oc.Residance_Country;
+        // Relationships
+        SetRelationship(oc);
         // General info
         SetGenInfo(oc);
         SetPrefrences(oc);
@@ -114,5 +122,27 @@ public class OC_Detail_UI : MonoBehaviour
         Text_Voice.text = "Voice: " + oc.Voice;
     }
 
+    private void SetRelationship(OC oc)
+    {
+        // Remove old relationships
+        foreach (Transform child in Parent_Relationship) Destroy(child.gameObject);
+
+        foreach (Relationship relation in oc.Relationships)
+        {
+            GameObject obj = Instantiate(Button_Relationship_Prefab, Parent_Relationship);
+
+            Relationship_Button ui = obj.GetComponent<Relationship_Button>();
+            Button button = obj.GetComponent<Button>();
+
+            ui.Title.text = $"{relation.Type}: {relation.Character.Name}";
+            ui.Description.text = relation.Description;
+
+            // If the button gets clicked open the charachter's page
+            button.onClick.AddListener(() =>
+            {
+                SetOCDetails(relation.Character);
+            });
+        }
+    }
     #endregion
 }
