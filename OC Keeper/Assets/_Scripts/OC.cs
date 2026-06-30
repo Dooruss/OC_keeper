@@ -81,7 +81,7 @@ public class Relationship
     {
         Friend , BestFriend , Sibling , Parent , Romantic , Acquaintance , Enemy , Sweetheart , Crush , Mentor,
         Rival , Colleague , Classmate , Roommate , Neighbour , Married , Ex , Partner , Fiancé , Divorced , Protector , Child , 
-        Grandparent , Grandchild , Cousin , Aunt , Uncle , In_Law , Step_Parent , Step_Sibling , Teacher , Boss
+        Grandparent , Grandchild , Cousin , Aunt , Uncle , In_Law , Step_Parent , Step_Sibling , Teacher , Boss , complicated
     }
     public RelationshipType Type;
     // With who?
