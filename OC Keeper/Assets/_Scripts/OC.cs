@@ -26,7 +26,7 @@ public class OC : ScriptableObject
     public string Occupation;
     public enum Chosen_Ethnicity
     {
-        America , german
+        America , german , Opaline
     }
     public enum Chosen_Species
     {

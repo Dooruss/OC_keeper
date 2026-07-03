@@ -1,0 +1,49 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37f427ef3c531674cb9b2467e547d389, type: 3}
+  m_Name: Deilla Saphora
+  m_EditorClassIdentifier: Assembly-CSharp::OC
+  Name: Deilla Saphora
+  Pronouns: She/her
+  Age: 39
+  Birthday: June 12th
+  Height: 1.64
+  Sexuality: 3
+  Main_Picture: {fileID: -1928871206256063177, guid: f7686a3e12b3b554f848a72096ffd44c, type: 3}
+  Occupation: President
+  Ethnicity: 2
+  Species: 0
+  Residance_Country: 0
+  Relationships: []
+  hobbys: Watching Movies
+  Religious: 0
+  Signature_Weapon: Chakram of Forest Warrior
+  Weaknesses: Fire
+  Fear_Phobia: Grasshoppers
+  Fav_Food: ??
+  Fav_Color: Green
+  Able_To_Cook: 1
+  Able_To_Bake: 1
+  Able_To_Drive: 1
+  Able_To_Instruments: Violin
+  Backstory: President Saphora is considered to be politically left-wing. She strongly
+    supports social welfare, equal rights, and welcoming visitors from other countries
+    and planets. Her policies focus on improving the lives of Opaline's citizens
+    while maintaining peaceful relations with the rest of Kawallu and the wider galaxy.
+    Above all, she wants what is best for both her country and the planet as a whole.
+  Body: 'Very fit '
+  Eyes: Beautiful green eyes
+  Hair: 'White and Green hair '
+  Clothing: Dresses
+  Fantasy_Features: N/A
+  Defining_Features: Her freckles
+  Voice: '?'
