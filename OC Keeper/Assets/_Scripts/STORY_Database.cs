@@ -28,7 +28,7 @@ public class STORY_Database : MonoBehaviour
             button.onClick.AddListener(() =>
             {
                 detailsUI.gameObject.SetActive(true);
-                detailsUI.SetOCDetails(story);
+                detailsUI.SetStoryDetails(story);
             });
 
         }
